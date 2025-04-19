@@ -1,0 +1,60 @@
+#+Title: Cheatsheet
+
+** V useful
+
+=C-c p p= Find file in a project
+
+=C-x C-f= Find a file
+
+=C-2= Show me all my open buffers
+
+=C-3= Show me all my last copy/pasted things
+
+=C-x C-c= Quit Emacs
+
+=C-x C-s= Save
+
+=C-x k= Kill a buffer
+
+=C-x b= Show all buffers
+
+** Window Commands
+
+=C-x 1= Only this window
+
+=C-x 2= Spit horizontal
+
+=C-x 3= Split Vertical
+
+=C-x 0= Close this buffer
+
+=C-x o= Other
+
+** How to do a babel buffer
+
+C-c C-c is the "do what i mean" command for org mode
+#+begin_src bash
+  echo hello
+#+end_src
+
+#+begin_src verb :dir /ssh:x:
+  GET https://icanhazip.com
+#+end_src
+
+** terminal
+
+is vterm
+
+** Command sending
+
+=C-c C-.= Send a command on this line to the other terminal window (vterm or ansi-term)
+
+ls
+
+#+begin_src bash :dir /ssh:x: :session *x-session*
+  ls
+#+end_src
+
+#+begin_src bash :dir /ssh:x: :session *x-session*
+  pwd
+#+end_src
