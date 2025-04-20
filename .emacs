@@ -536,3 +536,8 @@
    (org . t)))
 
 (use-package org-bullets)
+
+(setq display-line-numbers-type 'relative) ;; Relative line numbers
+(global-display-line-numbers-mode) ;; Enable line numbers
+
+(global-set-key (kbd "C-s") 'swiper)
