@@ -515,6 +515,12 @@
   (save-buffer)
   (kill-current-buffer))
 
+(use-package key-chord
+  :config
+  (setq key-chord-two-keys-delay 0.5)
+  (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+  (key-chord-mode 1))
+
 ;; Org mode
 
 (use-package verb)
